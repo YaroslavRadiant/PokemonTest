@@ -1,0 +1,32 @@
+@mixin center
+  display: flex
+  flex-direction: column
+
+.pokemon-list_container
+    @include center
+    align-items: center
+    justify-content: left
+    padding: 20px
+    height: 100%
+    .list_container-link
+        text-decoration: none
+    .pokemon-list_container-header
+        padding-top: 20px
+    .pokemon-list_container_item
+        width: 340px
+        text-decoration: none
+        border: 1px solid #bebebe
+        border-radius: 10px
+        margin-bottom: 10px
+        padding: 10px
+        list-style-type: none;
+    .pokemon-list_container_search
+        .pokemon-list_container_search_button
+            width: 130px
+            height: 56px
+            margin-left: 20px
+        .pokemon-list_container_search_input
+            width: 212px
+    .pokemon-list_container_select
+        width: 362px
+        margin-top: 20px
